@@ -1,0 +1,8 @@
+# EA SPORTS NHL Legacy Edition (title 454109EC, media 3CF2A23F)
+# XEX SHA-256: d818eb15775c1fee34b057b0fc494b211535d07123230ee45bd7d40991c55624
+# Include it from the entry point of nhllegacy_manifest.toml:
+# includes = ["../nhllegacy.toml"].
+#
+# The game recompiles and boots to its first-run screen with no title hints
+# (RG-NHL-001), so this file has no function entries, patches or add-ons yet.
+# Title-specific codegen settings for this executable go here.

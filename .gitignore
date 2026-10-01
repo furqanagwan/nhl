@@ -1,0 +1,16 @@
+# Keep game images, extracted files, generated output, builds, saves, and logs local.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+/docs/*
+!/docs/README.md
+!/docs/building.md
+!/docs/RG-NHL-001.md
+!/Legacy Edition/
+/Legacy Edition/*
+!/Legacy Edition/README.md
+!/Legacy Edition/nhllegacy.toml
+!/assets/
+/assets/*
+!/assets/icons/
