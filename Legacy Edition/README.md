@@ -10,8 +10,8 @@ The last NHL release on Xbox 360: it brings together the most popular modes
 and gameplay features from nine years of EA's NHL series, with the 2015-16
 rosters and schedules.
 
-**Status: Investigating.** It recompiles and boots to its first-run screen;
-menus beyond it and gameplay haven't been tried yet.
+**Status: In-game.** It recompiles, goes through its menus and plays a match
+at 60 fps on the ROV render target path; the rest hasn't been validated yet.
 
 ## The game
 
@@ -42,7 +42,8 @@ valid for this executable.
 
 ## What works
 
-Tested on an NVIDIA RTX 5080 Laptop GPU ([RG-NHL-001](../docs/RG-NHL-001.md)).
+Tested on an NVIDIA RTX 5080 Laptop GPU ([RG-NHL-001](../docs/RG-NHL-001.md),
+[RG-NHL-002](../docs/RG-NHL-002.md)).
 
 - **Recompiles without title hints.** The SDK needed its USB camera exports
   built in for it to link.
@@ -51,9 +52,12 @@ Tested on an NVIDIA RTX 5080 Laptop GPU ([RG-NHL-001](../docs/RG-NHL-001.md)).
   a 60-second GDK run. The log's only error lines are the `cache:` and
   `update:` drives not being mounted.
 
-**Not validated yet:** the menus past the first-run screen, a match,
-saving and loading, the title update, AMD and Intel GPUs, and the standard
-(non-GDK) build.
+- **Plays a match** (Montreal at Toronto) at 60 fps at 4K, with the game's
+  default render target path set to ROV: on the RTV path its matches draw
+  black apart from the HUD (rexglue-sdk#182).
+
+**Not validated yet:** a full match, saving and loading, the title update,
+AMD and Intel GPUs, and the standard (non-GDK) build.
 
 ## Configuration
 

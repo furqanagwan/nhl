@@ -12,8 +12,8 @@ ignores apart from its `README.md` and `.toml`.
 - **The build tools:** Visual Studio 2026 with LLVM Clang, CMake and Ninja, as
   listed in the [SDK README](https://github.com/furqanagwan/rexglue-sdk#requirements).
 - **The ReXGlue SDK** from [furqanagwan/rexglue-sdk](https://github.com/furqanagwan/rexglue-sdk),
-  built and installed from `main` (`9b4485a` or later: it builds the USB
-  camera exports this game imports).
+  built and installed from `main` (`d3e2846` or later: it has the USB camera
+  exports this game imports and the title cvar defaults below).
 - **Optional:** Microsoft GDK 260404, for the GDK build.
 - **Optional:** your console's dashboard system update (`$SystemUpdate`), so
   the Xbox guide is built in; see the SDK's
@@ -42,6 +42,15 @@ In `Legacy Edition/recompiled/nhllegacy_manifest.toml`:
 ```toml
 [entrypoint]
 includes = ["../nhllegacy.toml"]
+```
+
+In `Legacy Edition/recompiled/CMakeLists.txt`, give the game its default
+render target path (its matches draw black on the default RTV path,
+[RG-NHL-002](RG-NHL-002.md)):
+
+```cmake
+rexglue_setup_target(nhllegacy GPU_PLUGINS xenos
+    CVAR_DEFAULTS "render_target_path_d3d12=rov")
 ```
 
 ## 4. Generate and build

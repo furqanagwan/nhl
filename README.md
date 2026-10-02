@@ -18,7 +18,7 @@ built in.
 
 | Game | Released | Status |
 | --- | --- | --- |
-| [EA SPORTS NHL Legacy Edition](Legacy%20Edition/README.md) | 2015 · EA Canada | **Investigating** |
+| [EA SPORTS NHL Legacy Edition](Legacy%20Edition/README.md) | 2015 · EA Canada | **In-game** |
 
 The game's page has its details, the exact disc it's built from and what
 works.
