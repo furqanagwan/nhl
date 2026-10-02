@@ -1,4 +1,4 @@
-# RG-NHL-002: Matches draw black
+# RG-NHL-003: Matches draw black
 
 | | |
 | --- | --- |

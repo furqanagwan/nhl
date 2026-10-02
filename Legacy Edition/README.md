@@ -43,7 +43,7 @@ valid for this executable.
 ## What works
 
 Tested on an NVIDIA RTX 5080 Laptop GPU ([RG-NHL-001](../docs/RG-NHL-001.md),
-[RG-NHL-002](../docs/RG-NHL-002.md)).
+[RG-NHL-003](../docs/RG-NHL-003.md)).
 
 - **Recompiles without title hints.** The SDK needed its USB camera exports
   built in for it to link.

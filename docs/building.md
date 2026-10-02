@@ -46,7 +46,7 @@ includes = ["../nhllegacy.toml"]
 
 In `Legacy Edition/recompiled/CMakeLists.txt`, give the game its default
 render target path (its matches draw black on the default RTV path,
-[RG-NHL-002](RG-NHL-002.md)):
+[RG-NHL-003](RG-NHL-003.md)):
 
 ```cmake
 rexglue_setup_target(nhllegacy GPU_PLUGINS xenos
